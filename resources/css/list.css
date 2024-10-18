@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    background: url('image/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px; /* Lebar maksimum kontainer */
+    margin: auto; /* Center kontainer */
+    background: #ffffff; /* Warna latar belakang kontainer */
+    padding: 20px; /* Padding di dalam kontainer */
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek kedalaman */
+    opacity: 0.9; /* Opacity 90% */
+}
+
+h1 {
+    text-align: center; /* Pusatkan teks */
+    color: #333; /* Warna teks */
+    margin-bottom: 20px; /* Margin bawah */
+    font-size: 2.5em; /* Ukuran font untuk judul */
+}
+
+.table {
+    margin-top: 20px; /* Jarak atas tabel */
+    border-collapse: collapse; /* Menghilangkan spasi antara border */
+}
+
+.table th, .table td {
+    padding: 5px; /* Padding untuk sel */
+    text-align: center; /* Rata kiri untuk teks */
+    border: 1px solid #070707; /* Garis border */
+}
+
+.table-dark {
+    background-color: #f4623a; /* Warna latar belakang tabel gelap */
+    color: white; /* Warna teks tabel gelap */
+    font-size: 0,2em;
+}
+
+.table img.img-thumbnail {
+    border-radius: 5px; /* Sudut membulat untuk gambar */
+    border: 1px solid #cfa313; /* Border untuk gambar */
+}
+
+.table tr:nth-child(even) {
+    background-color:#ffff; /* Warna latar belakang untuk baris genap */
+}
+
+.table tr:hover {
+    background-color: #fadcbe; /* Warna latar belakang saat hover */
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2em; /* Ukuran font lebih kecil di layar kecil */
+    }
+
+    .table th, .table td {
+        padding: 10px; /* Padding lebih kecil di layar kecil */
+    }
+
+    .table img.img-thumbnail {
+        width: 30px; /* Ukuran gambar lebih kecil di layar kecil */
+    }
+}
+

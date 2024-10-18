@@ -24,8 +24,8 @@
                             <div class="form-group">
                                 <label for="email">{{ __('Email Address') }}</label>
                                 <input type="email" name="email"
-                                    class="form-control @error('email') is-invalid @enderror"
-                                    id="email" aria-describedby="emailHelp" required autofocus>
+                                    class="form-control @error('email') is-invalid @enderror" id="email"
+                                    aria-describedby="emailHelp" required autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -36,8 +36,8 @@
                             <div class="form-group">
                                 <label for="password">{{ __('Password') }}</label>
                                 <input type="password" name="password"
-                                    class="form-control @error('password') is-invalid @enderror"
-                                    id="password" required>
+                                    class="form-control @error('password') is-invalid @enderror" id="password"
+                                    required>
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -51,12 +51,18 @@
                             </div>
 
                             <button type="submit" class="btn btn-login btn-block">{{ __('Login') }}</button>
-                            
+
                             @if (Route::has('password.request'))
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+
+                                    <!-- Tautan untuk pengguna yang belum memiliki akun -->
+                                    <a href="{{ route('register') }}" class="btn btn-link">Belum punya akun?</a>
+                                </div>
                             @endif
+
                         </form>
 
                     </div>
