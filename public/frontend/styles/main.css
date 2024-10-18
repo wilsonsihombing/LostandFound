@@ -1,0 +1,39 @@
+/* login */
+@media (min-width: 992px) {
+    .login-container {
+        background: linear-gradient(90deg, #ffffff 70%, #ddd4ce 30%);
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.page-login {
+    height: 100vh;
+}
+.page-login .btn-login {
+    background-color: #f4623a;
+    color: #fff;
+}
+.page-login .btn-login:hover {
+    background-color: #e97f62;
+    color: #fff;
+}
+.page-login .section-left h1 {
+    font-family: "Merriweather Sans";
+    font-size: 50px;
+    font-weight: bold;
+    color: #2c1b1b;
+    text-align: left;
+}
+.page-login .section-right {
+    margin-top: 130px;
+    margin-left: 120px;
+}
+.page-login .section-right a {
+    font-family: "Merriweather Sans";
+    font-size: 16px;
+    color: #2c1b1b;
+    font-weight: 300;
+    text-decoration: underline;
+    text-align: center;
+} /*# sourceMappingURL=main.css.map */
