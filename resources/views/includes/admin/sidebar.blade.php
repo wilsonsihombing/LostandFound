@@ -27,7 +27,7 @@
 
     <!-- Nav Item - Laporkan Penemuan -->
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('report-loss.create') }}">
+        <a class="nav-link" href="{{ route('report-found.create') }}">
             <i class="fas fa-fw fa-check-circle"></i>
             <span>Laporkan Penemuan</span></a>
     </li>
@@ -41,12 +41,12 @@
     </li>
 
 
-    {{-- <!-- Nav Item - Data Penemuan -->
+    <!-- Nav Item - Data Penemuan -->
     <li class="nav-item">
-        <a class="nav-link" href="{{route('found-items.index')}}">
+        <a class="nav-link" href="{{route('found-items.store')}}">
             <i class="fas fa-fw fa-clipboard-list"></i>
             <span>Data Penemuan</span></a>
-    </li> --}}
+    </li>
 
     <hr class="sidebar-divider">
 

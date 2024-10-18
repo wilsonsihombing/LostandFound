@@ -69,6 +69,4 @@ class LostItemController extends Controller
         return view('pages.lost_item_detail', compact('lostItem'));
     }
 
-    
-
 }

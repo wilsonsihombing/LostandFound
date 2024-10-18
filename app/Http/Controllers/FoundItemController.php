@@ -15,7 +15,7 @@ class FoundItemController extends Controller
     public function create()
     {
         // Menampilkan form pelaporan penemuan
-        return view('found-items.create');
+        return view('pages.penemuan');
     }
 
     /**
